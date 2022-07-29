@@ -25,6 +25,10 @@ a {
   text-decoration: none;
 }
 
+button {
+  cursor: pointer;
+}
+
 .click {
   transition: all 300ms ease;
 }
@@ -95,6 +99,19 @@ LANDING PAGE
   align-items: center;
   border-radius: 50%;
   text-shadow: none;
+}
+
+.mail__btn {
+  width: 70px;
+  height: 70px;
+  font-size: 32px;
+  border-radius: 50%;
+  border: none;
+  background-color: rgb(241, 234, 167);
+  color: rgb(0, 0, 0, 0.7);
+  position: absolute;
+  bottom: 32px;
+  right: 48px;
 }
 /*
 
