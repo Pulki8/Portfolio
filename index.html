@@ -43,7 +43,7 @@
                 >Projects</a
               >
             </li>
-            <li class="nav__link">
+            <li class="nav__link" onclick="toggleModal()">
               <a
                 href=""
                 class="nav__link--anchor link__hover-effect link__hover-effect--black"
@@ -68,7 +68,7 @@
               I'm a <b>Frontend Software Engineer </b>with a strong passion for
               building web applications with great <b>user experiences.</b>
               <br />
-              Here's a bit more <b class="yellow">about me.</b>
+              Here's a bit more <b class="yellow click" onclick="toggleModal()">about me.</b>
             </p>
             <div class="social__list">
               <a
@@ -92,7 +92,7 @@
           </div>
         </header>
 
-        <button class="mail__btn click">
+        <button class="mail__btn click" onclick="toggleModal()">
           <i class="fa-solid fa-envelope"></i>
         </button>
         <a href="#projects" class="scroll">
@@ -180,20 +180,21 @@
             </div>
           </div>
           <div class="modal__half modal__contact">
+            <i class="fa-solid fa-xmark modal__exit click" onclick="toggleModal()"></i>
             <h3 class="modal__title modal__title--contact">
               Let's have a chat!
             </h3>
             <h4 class="modal__sub-title modal__sub-title--contact">
               I'm currently open to new opportunities.
             </h4>
-            <form onsubmit="contact()" id="contact__form">
+            <form onsubmit="contact(event)" id="contact__form">
               <div class="form__item">
                 <label class="form__item--label">Name</label>
-                <input class="input" name="user_name" type="text" required />
+                <input class="input" name="user_name" type="text" />
               </div>
               <div class="form__item">
                 <label class="form__item--label">Email</label>
-                <input class="input" name="user_email" type="email" required />
+                <input class="input" name="user_email" type="email" />
               </div>
               <div class="form__item">
                 <label class="form__item--label">Message</label>
@@ -215,7 +216,7 @@
               Thanks for the message! Looking foward to speaking to you soon.
             </div>
           </div>
-          <i class="fa-solid fa-xmark modal__exit click"></i>
+          
         </div>
       </section>
 
