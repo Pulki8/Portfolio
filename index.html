@@ -29,32 +29,22 @@
             <img id="personal-logo" src="" alt="" />
           </figure>
           <ul class="nav__link--list">
-            <li class="nav__link">
-              <a
-                href=""
-                class="nav__link--anchor link__hover-effect "
-                >About</a
-              >
+            <li class="nav__link" onclick="toggleModal()">
+              <a href="#" class="nav__link--anchor link__hover-effect">About</a>
             </li>
             <li class="nav__link">
-              <a
-                href=""
-                class="nav__link--anchor link__hover-effect"
+              <a href="#projects" class="nav__link--anchor link__hover-effect"
                 >Projects</a
               >
             </li>
             <li class="nav__link" onclick="toggleModal()">
-              <a
-                href=""
-                class="nav__link--anchor link__hover-effect"
+              <a href="#" class="nav__link--anchor link__hover-effect"
                 >Contact</a
               >
             </li>
             <li class="nav__link click" onclick="toggleContrast()">
-              <a
-                href="#"
-                class="nav__link--anchor"
-                ><i class="fa-adjust fa-solid fa-sun" ></i
+              <a href="#" class="nav__link--anchor"
+                ><i class="fa-adjust fa-solid fa-sun"></i
               ></a>
             </li>
           </ul>
@@ -65,10 +55,12 @@
             <h1 class="title">Hey</h1>
             <h1 class="title yellow">I'm Cecilia.</h1>
             <p class="header__para">
-              I'm a <b class="yellow">Frontend Software Engineer </b>with a strong passion for
-              building web applications with great <b class="yellow">user experiences.</b>
+              I'm a <b class="yellow">Frontend Software Engineer </b>with a
+              strong passion for building web applications with great
+              <b class="yellow">user experiences.</b>
               <br />
-              Here's a bit more <b class="yellow click" onclick="toggleModal()">about me.</b>
+              Here's a bit more
+              <b class="yellow click" onclick="toggleModal()">about me.</b>
             </p>
             <div class="social__list">
               <a
@@ -91,10 +83,11 @@
             </div>
           </div>
         </header>
-
-        <button class="mail__btn click" onclick="toggleModal()">
-          <i class="fa-solid fa-envelope"></i>
-        </button>
+        <a href="#">
+          <button class="mail__btn click" onclick="toggleModal()">
+            <i class="fa-solid fa-envelope"></i>
+          </button>
+        </a>
         <a href="#projects" class="scroll">
           <div class="scroll__icon click"></div>
         </a>
@@ -180,7 +173,10 @@
             </div>
           </div>
           <div class="modal__half modal__contact">
-            <i class="fa-solid fa-xmark modal__exit click" onclick="toggleModal()"></i>
+            <i
+              class="fa-solid fa-xmark modal__exit click"
+              onclick="toggleModal()"
+            ></i>
             <h3 class="modal__title modal__title--contact">
               Let's have a chat!
             </h3>
@@ -215,14 +211,14 @@
             <div class="modal__overlay modal__overlay--success">
               Thanks for the message! Looking foward to speaking to you soon.
             </div>
-          </div>          
+          </div>
         </div>
-        <img src="./assets/cloud.svg" class="shape shape--0">
-        <img src="./assets/cloud.svg" class="shape shape--1">
-        <img src="./assets/cloud.svg" class="shape shape--2">
-        <img src="./assets/cloud.svg" class="shape shape--3">
-        <img src="./assets/cloud.svg" class="shape shape--4">
-        <img src="./assets/cloud.svg" class="shape shape--5">
+        <img src="./assets/cloud.svg" class="shape shape--0" />
+        <img src="./assets/cloud.svg" class="shape shape--1" />
+        <img src="./assets/cloud.svg" class="shape shape--2" />
+        <img src="./assets/cloud.svg" class="shape shape--3" />
+        <img src="./assets/cloud.svg" class="shape shape--4" />
+        <img src="./assets/cloud.svg" class="shape shape--5" />
       </section>
 
       <section id="projects">
@@ -340,14 +336,16 @@
             </figure>
             <div class="footer__social--list">
               <a
-                href="#"
+                href="https://github.com/Pulki8"
                 class="footer__social--link link__hover-effect link__hover-effect--white"
+                target="_blank"
               >
                 Github
               </a>
               <a
-                href="#"
+                href="https://www.linkedin.com/in/ceciliadasilveira10/"
                 class="footer__social--link link__hover-effect link__hover-effect--white"
+                target="_blank"
               >
                 LinledIn
               </a>
@@ -361,6 +359,7 @@
               <a
                 href="#"
                 class="footer__social--link link__hover-effect link__hover-effect--white"
+                target="_blank"
               >
                 Resume
               </a>

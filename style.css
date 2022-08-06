@@ -210,12 +210,14 @@ LANDING PAGE
   border: none;
   background-color: rgb(241, 234, 167);
   color: rgb(0, 0, 0, 0.7);
-  position: absolute;
+  position: fixed;
   bottom: 32px;
   right: 48px;
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 100;
+  box-shadow: 0 12px 30px 0 rgb(0, 0, 0, 0.28);
 }
 
 .scroll {
@@ -664,4 +666,53 @@ SHAPES
   .header__para {
     font-size: 20px;
   }
+
+  .modal {
+    top: 0;
+    left: 0;
+    height: auto;
+    width: 100%;
+    transform: none;
+    flex-direction: column-reverse;    
+    border-radius: 0;
+  }
+
+  .modal__half {
+    width: 100%;
+  }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+  .title {
+    font-size: 52px;
+  }
+
+  .header__para {
+    font-size: 18px;
+  }
+
+  .nav__link:first-child {
+    display: none;
+  }
+
+  .project__description--para {
+    display: none;
+  }
+
+  .project__description {
+    left: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .project__description--sub-title {
+    margin-bottom: 8px;
+  }
+
+  .modal__half {
+    padding: 40px;
+  }
+
 }
