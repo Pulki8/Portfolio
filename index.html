@@ -23,7 +23,7 @@
   </head>
   <body>
     <div class="background">
-      <section id="landing-page">
+      <section id="landing-page" onmousemove="moveBackground(event)">
         <nav>
           <figure>
             <img id="personal-logo" src="" alt="" />
@@ -32,29 +32,29 @@
             <li class="nav__link">
               <a
                 href=""
-                class="nav__link--anchor link__hover-effect link__hover-effect--black"
+                class="nav__link--anchor link__hover-effect "
                 >About</a
               >
             </li>
             <li class="nav__link">
               <a
                 href=""
-                class="nav__link--anchor link__hover-effect link__hover-effect--black"
+                class="nav__link--anchor link__hover-effect"
                 >Projects</a
               >
             </li>
             <li class="nav__link" onclick="toggleModal()">
               <a
                 href=""
-                class="nav__link--anchor link__hover-effect link__hover-effect--black"
+                class="nav__link--anchor link__hover-effect"
                 >Contact</a
               >
             </li>
             <li class="nav__link click" onclick="toggleContrast()">
               <a
-                href=""
-                class="nav__link--anchor link__hover-effect link__hover-effect--black"
-                ><i class="fa-adjust fa-solid fa-sun"></i
+                href="#"
+                class="nav__link--anchor"
+                ><i class="fa-adjust fa-solid fa-sun" ></i
               ></a>
             </li>
           </ul>
@@ -65,8 +65,8 @@
             <h1 class="title">Hey</h1>
             <h1 class="title yellow">I'm Cecilia.</h1>
             <p class="header__para">
-              I'm a <b>Frontend Software Engineer </b>with a strong passion for
-              building web applications with great <b>user experiences.</b>
+              I'm a <b class="yellow">Frontend Software Engineer </b>with a strong passion for
+              building web applications with great <b class="yellow">user experiences.</b>
               <br />
               Here's a bit more <b class="yellow click" onclick="toggleModal()">about me.</b>
             </p>
@@ -215,9 +215,14 @@
             <div class="modal__overlay modal__overlay--success">
               Thanks for the message! Looking foward to speaking to you soon.
             </div>
-          </div>
-          
+          </div>          
         </div>
+        <img src="./assets/cloud.svg" class="shape shape--0">
+        <img src="./assets/cloud.svg" class="shape shape--1">
+        <img src="./assets/cloud.svg" class="shape shape--2">
+        <img src="./assets/cloud.svg" class="shape shape--3">
+        <img src="./assets/cloud.svg" class="shape shape--4">
+        <img src="./assets/cloud.svg" class="shape shape--5">
       </section>
 
       <section id="projects">
@@ -348,6 +353,7 @@
               </a>
               <a
                 href="#"
+                onclick="toggleModal()"
                 class="footer__social--link link__hover-effect link__hover-effect--white"
               >
                 Contact
